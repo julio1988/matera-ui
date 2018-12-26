@@ -1,0 +1,71 @@
+.sidenav-container {
+  position: absolute;
+  top: 60px;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  height: 90%;
+}
+
+.sidenav {
+  width: 230px;
+  background: rgba(001, 074, 164, 0.8);
+  color: #7c7f85;
+  border: 0px;
+}
+
+.sidenav .mat-toolbar {
+  background: #fff;
+  margin-top: 28px;
+  height: 60px;
+  background: rgba(001, 074, 164, 0.8);
+}
+
+.sidenav .mat-toolbar .mat-icon {
+  color: #fff;
+}
+
+.mat-toolbar.mat-primary {
+  background: #fff;
+  color: #7c7f85;
+  font-weight: bold;
+}
+
+.mat-list-base .mat-list-item {
+  color: #fff;
+}
+
+.mat-list-option:focus,.mat-list-option:hover,.mat-nav-list .mat-list-item:focus,.mat-nav-list .mat-list-item:hover{
+  background: rgba(092, 166, 220, 0.6);
+  border-bottom:2px solid rgba(092, 166, 220, 0.4);
+}
+
+.header {
+  position: absolute;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom:5px solid #ccc;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.logo {
+  width: 140px;
+  display: block;
+}
+
+.mat-icon {
+  color: rgba(001, 074, 164, 0.8);
+  font-size: 30px;
+  margin-right: 5px;
+}
+
