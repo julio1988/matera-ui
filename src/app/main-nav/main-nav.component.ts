@@ -10,16 +10,10 @@ import { map } from 'rxjs/operators';
 })
 export class MainNavComponent {
 
-  mobileQuery: MediaQueryList;
-
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches)
     );
 
   constructor(private breakpointObserver: BreakpointObserver) {}
-
-
-  shouldRun = [/(^|\.)plnkr\.co$/, /(^|\.)stackblitz\.io$/].some(h => h.test(window.location.host));
-
 }
