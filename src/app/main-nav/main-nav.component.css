@@ -61,6 +61,7 @@
 .logo {
   width: 140px;
   display: block;
+  margin-left: 16px;
 }
 
 .mat-icon {
@@ -68,4 +69,29 @@
   font-size: 30px;
   margin-right: 5px;
 }
+
+#face{
+  position: absolute;
+  right: 0px;
+  padding: 16px;
+}
+
+#toolbar-menu {
+  position: absolute;
+  bottom: 1px;
+}
+
+#toogle-toolbar{
+  position: absolute;
+  background: rgba(001, 074, 164, 0.8);
+  right: 10px;
+}
+
+#bt-toolbar-menu{
+  position: absolute;
+  background: rgba(001, 074, 164, 0.8);
+  right: 10px;
+}
+
+
 
