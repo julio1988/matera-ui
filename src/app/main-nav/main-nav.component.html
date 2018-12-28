@@ -6,7 +6,7 @@
             <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
         </button>
 
-        <img src="/assets/logo.png" class="logo center-align">
+        <img src="/assets/logo.png" class="logo center-align" style="margin-left: 16px;">
 
         <div style=" position: absolute;
                      right: 0px;
@@ -30,18 +30,14 @@
         <mat-nav-list>
           <a mat-list-item href="#">Cesta de Benefícios</a>
           <a mat-list-item href="#">Integração Ticket</a>
-          <a mat-list-item href="#">Cesta de Benefícios</a>
-          <a mat-list-item href="#">Integração Ticket</a>
-          <a mat-list-item href="#">Cesta de Benefícios</a>
-          <a mat-list-item href="#">Integração Ticket</a>
-          <a mat-list-item href="#">Cesta de Benefícios</a>
-          <a mat-list-item href="#">Integração Ticket</a>
-          <a mat-list-item href="#">Cesta de Benefícios</a>
-          <a mat-list-item href="#">Integração Ticket</a>
         </mat-nav-list>
-        <mat-toolbar  class="menu">
-          <button mat-icon-button (click)="drawer.toggle()">
-            <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        <mat-toolbar  class="menu" style="position: absolute;
+                                          bottom: 1px;">
+          <button mat-icon-button (click)="drawer.toggle()" 
+                                     style=" position: absolute;
+                                             background: rgba(001, 074, 164, 0.8);
+                                             right: 10px;">
+            <mat-icon aria-label="Side nav toggle icon">keyboard_arrow_left</mat-icon>
         </button>
         </mat-toolbar>
       </mat-sidenav>
