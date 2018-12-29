@@ -28,15 +28,16 @@
     </mat-sidenav>
 
     <mat-sidenav-content>
-        <div style="margin: 16px;">
-            <router-outlet></router-outlet>
-        </div>
-        <mat-toolbar id="footer">
-            <img src="/assets/logo-branca.png" style="right: 16px; position: absolute; width: 140px;
-            display: block;
-            margin-left: 16px;">
-        </mat-toolbar>
-    </mat-sidenav-content>
 
+      <div class="body">
+        <div class="content">
+          <router-outlet></router-outlet>
+        </div>
+        <footer class="footer">
+          <img id="logo-footer" src="/assets/logo-branca.png">
+        </footer>
+      </div>
+
+    </mat-sidenav-content>
   </mat-sidenav-container>
 </ng-container>
