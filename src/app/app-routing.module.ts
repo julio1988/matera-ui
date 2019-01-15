@@ -1,9 +1,9 @@
-import { TableComponent } from './table/table.component';
+import { CestaComponent } from './cesta/cesta.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  { path: 'table', component: TableComponent }
+  { path: 'cesta', component: CestaComponent }
 ];
 
 @NgModule({

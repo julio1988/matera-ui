@@ -4,16 +4,18 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MainNavComponent } from './main-nav/main-nav.component';
+import { MainNavComponent } from './core/main-nav/main-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
-import { TableComponent } from './table/table.component';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule,
+   MatListModule, MatTableModule, MatPaginatorModule,
+   MatSortModule, MatMenuModule, MatFormFieldModule, MatFormFieldControl } from '@angular/material';
+import { CestaComponent } from './cesta/cesta.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainNavComponent,
-    TableComponent
+    CestaComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,9 @@ import { TableComponent } from './table/table.component';
     MatListModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatMenuModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -6,9 +6,24 @@
     </button>
     <img src="/assets/logo.png" class="logo">
     <div id="face">
-      <button mat-icon-button>
-        <mat-icon>face</mat-icon>
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>more_vert</mat-icon>
       </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>face</mat-icon>
+          <span>Julio Cesar Mendonça</span>
+        </button>
+        <mat-divider></mat-divider>
+        <button mat-menu-item>
+          <mat-icon>contact_mail</mat-icon>
+          <span>julio.mendonca@matera.com</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>exit_to_app</mat-icon>
+          <span>Sair</span>
+        </button>
+      </mat-menu>
     </div>
   </mat-toolbar>
 
@@ -17,7 +32,7 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="!(isHandset$ | async)">
 
       <mat-nav-list>
-        <a routerLinkActive="ativo" routerLink="/table" mat-list-item href="#">Cesta de Benefícios</a>
+        <a routerLinkActive="ativo" routerLink="/cesta" mat-list-item href="#">Cesta de Benefícios</a>
         <a mat-list-item href="#">Integração Ticket</a>
       </mat-nav-list>
       <mat-toolbar id="toolbar-menu">
