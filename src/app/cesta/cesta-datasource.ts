@@ -12,10 +12,10 @@ export interface TableItem {
 
 // TODO: replace this with real data from your application
 const EXAMPLE_DATA: TableItem[] = [
-  {id: 1, valor: 'Hydrogen', dataCadastro: '20/12/2018'},
-  {id: 2, valor: 'Helium', dataCadastro: '20/12/2018'},
-  {id: 3, valor: 'Lithium', dataCadastro: '20/12/2018'},
-  {id: 4, valor: 'Beryllium', dataCadastro: '20/12/2018'},
+  {id: 1, valor: 'R$ 125,00', dataCadastro: '20/12/2018'},
+  {id: 2, valor: 'R$ 155,00', dataCadastro: '20/12/2018'},
+  {id: 3, valor: 'R$ 175,00', dataCadastro: '20/12/2018'},
+  {id: 4, valor: 'R$ 145,00', dataCadastro: '20/12/2018'},
 ];
 
 /**

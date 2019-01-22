@@ -32,8 +32,8 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="!(isHandset$ | async)">
 
       <mat-nav-list>
-        <a routerLinkActive="ativo" routerLink="/cesta" mat-list-item href="#">Cesta de Benefícios</a>
-        <a mat-list-item href="#">Integração Ticket</a>
+        <a routerLinkActive="active" routerLink="/cesta" mat-list-item href="#">Cesta de Benefícios</a>
+        <a routerLinkActive="active" routerLink="/edit" mat-list-item href="#">Edit</a>
       </mat-nav-list>
       <mat-toolbar id="toolbar-menu">
         <button id="bt-toolbar-menu" mat-icon-button (click)="drawer.toggle()">

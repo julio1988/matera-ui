@@ -1,0 +1,14 @@
+.mat-grid-tile {
+  margin: 16px;
+
+}
+
+.example-card {
+  width: 85%;
+  height: 80%;
+  position: relative;
+}
+
+.material-icons{
+  font-size: 40px;
+}

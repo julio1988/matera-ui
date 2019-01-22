@@ -8,14 +8,17 @@ import { MainNavComponent } from './core/main-nav/main-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule,
    MatListModule, MatTableModule, MatPaginatorModule,
-   MatSortModule, MatMenuModule, MatFormFieldModule, MatFormFieldControl, MatInputModule } from '@angular/material';
+   MatSortModule, MatMenuModule,
+   MatFormFieldModule, MatFormFieldControl, MatInputModule, MatGridListModule, MatCardModule } from '@angular/material';
 import { CestaComponent } from './cesta/cesta.component';
+import { EditComponent } from './edit/edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainNavComponent,
-    CestaComponent
+    CestaComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,9 @@ import { CestaComponent } from './cesta/cesta.component';
     MatSortModule,
     MatMenuModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatGridListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
