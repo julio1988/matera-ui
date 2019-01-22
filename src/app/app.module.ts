@@ -9,7 +9,7 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule,
    MatListModule, MatTableModule, MatPaginatorModule,
    MatSortModule, MatMenuModule,
-   MatFormFieldModule, MatFormFieldControl, MatInputModule, MatGridListModule, MatCardModule } from '@angular/material';
+   MatFormFieldModule, MatFormFieldControl, MatInputModule, MatGridListModule, MatCardModule, MatExpansionModule } from '@angular/material';
 import { CestaComponent } from './cesta/cesta.component';
 import { EditComponent } from './edit/edit.component';
 
@@ -37,7 +37,8 @@ import { EditComponent } from './edit/edit.component';
     MatFormFieldModule,
     MatInputModule,
     MatGridListModule,
-    MatCardModule
+    MatCardModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
