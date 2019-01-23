@@ -1,3 +1,4 @@
+import { CurrencyMaskModule } from 'ng2-currency-mask';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -38,7 +39,9 @@ import { EditComponent } from './edit/edit.component';
     MatInputModule,
     MatGridListModule,
     MatCardModule,
-    MatExpansionModule
+    MatExpansionModule,
+    CurrencyMaskModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

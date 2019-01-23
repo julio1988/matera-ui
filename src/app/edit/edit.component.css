@@ -1,10 +1,6 @@
-.mat-grid-tile {
-  margin: 16px;
-}
-
 .example-card {
-  width: 85%;
-  height: 80%;
+  width: 80%;
+  height: 60%;
   position: relative;
 }
 
@@ -12,7 +8,33 @@
   font-size: 40px;
 }
 
-.mat-toolbar {
-  background:rgba(092,166,220,.87);
-  color: #f5f5f5;
+.example-full-width{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top: 30px;
+}
+
+.mat-input-element {
+  text-align: right;
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.example-right-align {
+  text-align: right;
+}
+
+input.example-right-align::-webkit-outer-spin-button,
+input.example-right-align::-webkit-inner-spin-button {
+  display: none;
+}
+
+input.example-right-align {
+  -moz-appearance: textfield;
 }
