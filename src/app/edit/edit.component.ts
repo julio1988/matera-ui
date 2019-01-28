@@ -1,11 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 
+export interface Food {
+  value: string;
+  viewValue: string;
+}
+
 @Component({
   selector: 'app-edit',
   templateUrl: './edit.component.html',
   styleUrls: ['./edit.component.css']
 })
 export class EditComponent implements OnInit {
+
+  foods: Food[] = [
+    {value: '60', viewValue: 'Estacionamento Polis'},
+    {value: '66', viewValue: 'Estacionamento Angeloni'}
+  ];
 
   value;
   breakpoint;

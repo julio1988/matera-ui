@@ -21,15 +21,28 @@
       Valor Excedente
       R$ 400,00
     </mat-list-item>
-
+    <mat-list-item role="listitem">
+      <button mat-raised-button style="position: absolute; right: 10px;" color="primary">SALVAR ALTERAÇÕES</button>
+    </mat-list-item>
   </mat-list>
-
-  <button mat-raised-button style="margin: 10px;" color="primary">SALVAR ALTERAÇÕES</button>
 
 </div>
 <br />
 <div class="mat-elevation-z8">
   <mat-grid-list [cols]="breakpoint" rowHeight="2:1" (window:resize)="onResize($event)">
+    <mat-grid-tile>
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-icon mat-card-avatar>local_grocery_store</mat-icon>
+          <mat-card-title>Ticket Alimentação</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Valor" currencyMask [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }">
+          </mat-form-field>
+        </mat-card-content>
+    </mat-card>
+    </mat-grid-tile>
     <mat-grid-tile>
       <mat-card class="example-card">
         <mat-card-header>
@@ -101,10 +114,8 @@
           <mat-icon mat-card-avatar>enhanced_encryption</mat-icon>
           <mat-card-title>Assistência Odontológica</mat-card-title>
         </mat-card-header>
-        <mat-card-content>
-          <mat-form-field class="example-full-width">
-            <input matInput placeholder="Valor" currencyMask [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }">
-          </mat-form-field>
+        <mat-card-content style="text-align: center; margin-top: 30px;">
+          <mat-checkbox>R$ 21,03</mat-checkbox>
         </mat-card-content>
       </mat-card>
     </mat-grid-tile>
@@ -129,7 +140,14 @@
         </mat-card-header>
         <mat-card-content>
           <mat-form-field class="example-full-width">
-            <input matInput placeholder="Valor" currencyMask [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }">
+            <mat-select placeholder="Selecione">
+              <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{food.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="example-full-width_1">
+              <input matInput placeholder="Valor" currencyMask [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }">
           </mat-form-field>
         </mat-card-content>
       </mat-card>
@@ -142,7 +160,15 @@
         </mat-card-header>
         <mat-card-content>
           <mat-form-field class="example-full-width">
-            <input matInput placeholder="Valor" currencyMask [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }">
+            <mat-select placeholder="Selecione">
+              <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{food.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="example-full-width_1">
+              <input matInput placeholder="Valor" [value]="value"
+              currencyMask [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }">
           </mat-form-field>
         </mat-card-content>
       </mat-card>
