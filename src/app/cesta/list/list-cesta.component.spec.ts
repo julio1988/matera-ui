@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatPaginatorModule, MatSortModule, MatTableModule } from '@angular/material';
 
-import { CestaComponent } from './cesta.component';
+import { CestaComponent } from './list-cesta.component';
 
 describe('TableComponent', () => {
   let component: CestaComponent;

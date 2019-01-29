@@ -7,8 +7,8 @@ export interface Food {
 
 @Component({
   selector: 'app-edit',
-  templateUrl: './edit.component.html',
-  styleUrls: ['./edit.component.css']
+  templateUrl: './edit-cesta.component.html',
+  styleUrls: ['./edit-cesta.component.css']
 })
 export class EditComponent implements OnInit {
 

@@ -1,11 +1,11 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator, MatSort } from '@angular/material';
-import { CestaDataSource } from './cesta-datasource';
+import { CestaDataSource } from './list-cesta-datasource';
 
 @Component({
   selector: 'app-cesta',
-  templateUrl: './cesta.component.html',
-  styleUrls: ['./cesta.component.css']
+  templateUrl: './list-cesta.component.html',
+  styleUrls: ['./list-cesta.component.css']
 })
 export class CestaComponent implements OnInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;

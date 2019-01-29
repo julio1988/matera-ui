@@ -1,5 +1,5 @@
-import { EditComponent } from './edit/edit.component';
-import { CestaComponent } from './cesta/cesta.component';
+import { EditComponent } from './cesta/edit/edit-cesta.component';
+import { CestaComponent } from './cesta/list/list-cesta.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 

@@ -13,8 +13,8 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule,
    MatFormFieldModule, MatFormFieldControl,
    MatInputModule, MatGridListModule, MatCardModule, MatExpansionModule, MatSelectModule,
    MatCheckbox, MatCheckboxModule } from '@angular/material';
-import { CestaComponent } from './cesta/cesta.component';
-import { EditComponent } from './edit/edit.component';
+import { CestaComponent } from './cesta/list/list-cesta.component';
+import { EditComponent } from './cesta/edit/edit-cesta.component';
 
 @NgModule({
   declarations: [
